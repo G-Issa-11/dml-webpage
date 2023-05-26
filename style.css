@@ -22,7 +22,6 @@ body{
     font-size: 14px;
     color: #2f2f2f;
     background-color: #f9f7f1;
-    border: 20px solid #ddd;
     margin: 0;
     padding: 0;
 }
@@ -76,7 +75,7 @@ p{
 .collumn{
     font-size: 14px;
     line-height: 20px;
-    width: 28%;
+    width: 17.5%;
     display: inline-block;
     padding: 0 1% 0 1%;
     vertical-align: top;
@@ -297,20 +296,26 @@ p{
 
 
 .video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625 or 56.25%) */
-  margin-bottom: 20px;
-	margin-top: 20px;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+    position: relative;
+    cursor: pointer;
+    /* width: 100%;
+    height: 100%; */
+    /* padding-bottom: 56.25%; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('pexels-pixabay-371285.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px
+  }
+  
 
 footer {
 	text-align: center;
@@ -405,3 +410,33 @@ footer i {
 .mySlides p {
     text-align: center;
 }
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vh
+  }
+  
+.closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 50px;
+    color: #fff
+  }
+  
